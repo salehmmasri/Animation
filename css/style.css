@@ -1,0 +1,198 @@
+.ball{
+	text-align: center;
+}
+.heart, .bounce{
+	width: 15%;
+	height: 300px;
+	padding: 30px;
+	text-align: center;	
+	box-sizing: border-box;	
+	display: inline-block;
+	vertical-align: top;
+    animation: heartbeat 20s ease infinite;
+}
+.heart{
+	font-size: 200px;
+	color:blue;
+	animation: heartbeat 1.4s ease infinite;
+	}
+@keyframes heartbeat {
+	0%{
+		transform: scale(1);
+	}
+	10%{
+		transform: scale(1.3);
+	}
+	20%{transform: scale(1.5);
+	}
+	30%{transform: scale(1);
+	}
+	40%{ transform: scale(1.3);
+	}
+	50%{ transform: scale(1.5);
+	}
+	70%{ transform: scale(1);
+	}
+}
+.heartdiv{
+	display: inline;
+}
+
+
+.heart .fas{
+	color: #FB7E6E;
+	font-size: 200px;
+	animation: pump 3s ease-in-out forwards;
+}
+@keyframes pump{
+	10%{ transform: scale(1); }
+	20%{ transform: scale(1.4);	}
+	30%{ transform: scale(1.2);	}
+	40%{ transform: scale(1.4);	}
+	55%{ transform: scale(1); }
+	70%{ transform: scale(1.4);	}
+	80%{ transform: scale(1.2);	}
+	90%{ transform: scale(1.4);	}
+	100%{ transform: scale(1); }		
+}
+
+
+.bounce p{
+	color: #00CED2;
+	font-size: 50px;
+	animation: bounce 2s ease-in-out forwards;
+}
+@keyframes bounce {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+	}	
+	50% {
+		opacity: 1;
+		transform: scale(1.4);
+	}	
+	100% { transform: scale(1); }
+}
+
+
+.ball-falling{
+	position: relative;
+	width: 50%;
+	height: 300px;
+	box-sizing: border-box;	
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+}
+.ball-falling .fas{
+	position: absolute;
+	top: -200px;
+	font-size: 30px;			
+}
+.b1{
+	left: 0;
+	color: black;
+	animation: falling 2.3s ease-in-out infinite ;
+}
+.b2{
+	left: 40px;
+	color: red;
+	animation: falling 2.3s ease-in-out infinite .1s;
+}
+.b3{
+	left: 80px;
+	color: yellow;
+	animation: falling 2.3s ease-in-out infinite .14s;
+}
+.b4{
+	left: 120px;
+	color: pink;
+	animation: falling 2.3s ease-in-out infinite;
+}
+.b5{
+	left: 160px;
+	color: green;
+	animation: falling 2.3s ease-in-out infinite .18s;
+}
+.b6{
+	left: 200px;
+	color: blue;
+	animation: falling 2.3s ease-in-out infinite .07s;
+}
+@keyframes falling{
+	0%{ top:-100px; }
+	20%{ top:257px; }
+	35%{ top:237px; }			
+	45%{ top:250px; }
+	60%{ top:237px; }
+	85%{ top:257px; }			
+	100%{ top:-100px; }
+}
+
+
+
+
+	.forwords{
+				text-align: center;
+				background-color: #ccc;
+				padding: 20px;
+				border-radius: 20px;
+				width: 250px;
+				height: 50px;
+
+			}
+			.normal{
+				text-align: center;
+				background-color: orange;
+				padding: 20px;
+				width: 250px;
+				height: 50px;
+				border-radius: 20px;
+			}
+			
+			.main{
+				width: 350px;
+				margin-left: 100px;
+
+			}
+			.main:hover .forwords{
+				animation:  scaleandstay 1s ease forwards;
+				}
+			.main:hover .normal{
+				animation:  scaleandstay 1s ease ;
+			}
+		
+			@keyframes scaleandstay {
+				to{
+					transform: scale(1.5);
+				}
+			}
+			.watch{
+				width: 500px;
+				height: 500px;
+				border:40px solid green;
+				border-radius: 50%;
+			}
+			.line{    
+			padding: 0px;
+		    font-size: 27px;
+		    font-weight: bolder;
+		    margin: 50%;
+		    color: blue;
+		    animation: moving 2s infinite linear;
+			}
+			}
+			.line span:first-child{
+				color: b;
+			}
+			.line:hover{
+				animation-play-state: paused;
+			}
+			@keyframes moving {
+				to{
+					transform: rotate(360deg);
+				}
+			}
+			#dvc{
+				margin: 10%;
+			}
